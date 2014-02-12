@@ -1,0 +1,38 @@
+body {
+  font-family: helvetica;
+  font-size: .9em; }
+
+.menu {
+  background: url("wood.png");
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #DDD;
+  padding: 20px;
+  box-sizing: both; }
+  .menu .menu-body {
+    background: #FFF;
+    padding: 40px 0;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); }
+    .menu .menu-body h1, .menu .menu-body h2, .menu .menu-body h3 {
+      margin: 0;
+      text-align: center; }
+    .menu .menu-body h2 {
+      margin: -15px 0 10px 0;
+      color: #1a4c42; }
+    .menu .menu-body h3 {
+      margin: 15px 0;
+      font-size: .9em; }
+    .menu .menu-body ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      width: 80%; }
+      .menu .menu-body ul li {
+        padding: 10px 0;
+        border-bottom: 1px dotted #e3e3e3; }
+        .menu .menu-body ul li:last-child {
+          border-style: none; }
+        .menu .menu-body ul li span:last-child {
+          float: right; }

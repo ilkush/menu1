@@ -1,0 +1,61 @@
+@mixin one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0, .5);
+	  -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0, .5);
+	    box-shadow: 0 8px 6px -6px rgba(0,0,0, .5);
+}
+
+body {
+	font-family: helvetica;
+	font-size: .9em;
+}
+
+.menu {
+	background: url("wood.png");
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid #DDD;
+	padding: 20px;
+	box-sizing: both;
+
+	.menu-body {
+		background: #FFF;
+		padding: 40px 0;
+		@include one-edge-shadow();
+
+		h1, h2, h3 {
+			margin: 0;
+			text-align: center;
+		}
+
+		h2 {
+			margin: -15px 0 10px 0;
+			color: #1a4c42;
+		}
+
+		h3 {
+			margin: 15px 0;
+			font-size: .9em;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0 auto;
+			padding: 0;
+			width: 80%;
+
+			li {
+				padding: 10px 0;
+				border-bottom:1px dotted #e3e3e3;
+
+				&:last-child {
+					border-style: none;
+				}
+
+				span:last-child {
+					float: right;
+				}
+			}
+		}
+	}
+
+}
